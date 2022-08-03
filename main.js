@@ -6,18 +6,26 @@ function todoBtnClick(){
     if(todoInput.value.length > 0) {
         const ul = document.querySelector("ul");
         const li = document.createElement("li");
+        const button = document.createElement("button");
         ul.appendChild(li);
-        li.innerHTML = 
-        `<li>${todoInput.value}
-        <button class="del_btn">삭제</button>
-        </li>`;
+        li.innerText = `${todoInput.value}`
+        li.appendChild(button);
+        button.innerText = "x";
+        button.setAttribute("class", "delete_btn");
+        li.innerText.setAttribute("class", "todo_text")
+        function deleteTodo() {
+            const removeli = event.target.parentElement;
+            removeli.remove();
+        }
+
+        button.addEventListener("click", deleteTodo);
     }
 }
 
 todoBtn.addEventListener("click", todoBtnClick);
 
 
-const todoDiv = document.createElement("div");
+
 
 
 
