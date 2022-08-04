@@ -6,19 +6,20 @@ function todoBtnClick(){
     if(todoInput.value.length > 0) {
         const ul = document.querySelector("ul");
         const li = document.createElement("li");
-        const button = document.createElement("button");
+        const DeleteBtn = document.createElement("button");
         ul.appendChild(li);
         li.innerText = `${todoInput.value}`
-        li.appendChild(button);
-        button.innerText = "x";
-        button.setAttribute("class", "delete_btn");
-        li.innerText.setAttribute("class", "todo_text")
+        li.setAttribute("class", "li");
+        li.appendChild(DeleteBtn);
+        DeleteBtn.innerText = "x";
+        DeleteBtn.setAttribute("class", "delete_btn");
         function deleteTodo() {
             const removeli = event.target.parentElement;
             removeli.remove();
         }
 
-        button.addEventListener("click", deleteTodo);
+        DeleteBtn.addEventListener("click", deleteTodo);
+
     }
 }
 
