@@ -1,0 +1,95 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color:  rgba(220, 190, 203, 0.664);
+}
+
+.todo-title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 26px;
+    color: rgb(43, 43, 43);
+}
+
+.wrapper {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.form_layout {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchValue {
+    width: 150px;
+    margin-top: 13px;
+    padding: 6px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+
+#searchValue::placeholder {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#searchValue:focus {
+    outline: none;
+}
+
+.todo_list {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    margin: 10px auto;
+    border-radius: 12px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px 7px 13px;
+}
+
+#add_btn {
+    width: 35px;
+    padding: 6px;
+    margin: 13px 0 0 3px;
+    border: 0;
+    border-radius: 12px;
+    background-color:  rgba(230, 144, 188, 0.533);
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.delete_btn {
+    margin: 0 15px 0 auto;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: palevioletred;
+}
