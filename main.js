@@ -28,7 +28,7 @@ function todoBtnClick() {
         function lineLi() {
         div.style.textDecoration = div.style.textDecoration == "none" ? "line-through" : "none";
         }
-        // 완료 된 리스트에 줄 긋기 / 줄 없애기
+        // 완료 된 리스트에 줄 긋기
 
 
         function deleteTodo() {
