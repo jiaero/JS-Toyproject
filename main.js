@@ -9,12 +9,12 @@ function todoBtnClick() {
     } 
         const ul = document.querySelector("ul");
         const li = document.createElement("li");  // html에 'li' 태그 만들기
-        const span = document.createElement("span");  // html에 'div' 태그 만들기
+        const span = document.createElement("span");  // html에 'span' 태그 만들기
         const DeleteBtn = document.createElement("button");  // 삭제 버튼 생성
         const name = document.querySelector(".form_layout");
 
         ul.appendChild(li);
-        li.appendChild(span);  // li에 'span' 자식으로 붙이기 
+        li.appendChild(span);  // li에 'div' 자식으로 붙이기 
         span.innerText = `${todoInput.value}`  // <li>입력된 할 일</li>
         li.appendChild(DeleteBtn);  // li에 삭제 버튼을 자식으로 붙이기
         todoInput.value = "";  // 할 일 입력창 초기화

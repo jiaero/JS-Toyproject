@@ -25,7 +25,6 @@ body {
     padding: 30px;
     border-radius: 20px;
     background-color: whitesmoke;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 .form_layout {
@@ -57,17 +56,17 @@ body {
 }
 
 .todo_list {
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: white;
-    border: 1px solid rgb(235, 235, 235);
     margin: 10px auto;
-    border-radius: 12px;
-    font-size: 11px;
-    text-align: center;
+    padding: 7px 0px 7px 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7px 0px 7px 13px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
 }
 
 #add_btn {
